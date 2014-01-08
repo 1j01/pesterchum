@@ -1,0 +1,62 @@
+﻿
+
+#logo-chat-client {
+	-webkit-flex-flow: row;
+	-webkit-justify-content: space-around;
+}
+#logo-chat-client span {
+	-webkit-flex: 1;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
+}
+
+
+section {
+	-webkit-flex-flow: column;
+}
+ul {
+	-webkit-flex-flow: column;
+}
+
+#moods {
+	-webkit-flex-flow: row;
+	-webkit-flex: 1;
+}
+.mood {
+	-webkit-flex-flow: row;
+	-webkit-flex: 1;
+}
+column {
+	-webkit-flex-flow: column;
+	-webkit-flex: 1;
+}
+column[spacer] {
+	-webkit-flex: 0;
+	-webkit-flex-basis: 1px;
+}
+#chumroll {
+	-webkit-flex: 1;
+}
+#chums {
+	-webkit-flex: 1;
+	-webkit-flex-flow: column;
+	display: block;
+	overflow: auto;
+}
+.chum {
+	-webkit-flex-flow: row;
+	-webkit-flex: 1;
+	-webkit-justify-content: flex-start;
+}
+#pester {
+	-webkit-flex: 0;
+	-webkit-flex-basis: 22px;
+	-webkit-align-self: center;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
+	-webkit-align-center: goddamnit;
+}
+
+.mood *, .chum *, #chumhandle * {
+	pointer-events: none;
+}

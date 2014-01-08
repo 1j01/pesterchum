@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>PesterChum</title>
+		<link rel="stylesheet" href="index.css"/>
+		<link rel="stylesheet" href="common.css"/>
+		<script src="jquery.js"></script>
+		<script src="pesterchum.js"></script>
+	</head>
+	<body>
+		<h1>PESTERCHUM 0<span>.</span>1</h1>
+		<div id="logo-chat-client" class="box">
+			<img src="pesterchums.png"/>
+			<span>CHAT CLIENT</span>
+		</div>
+		<section id="chumroll">
+			<label>ChumRoll</label>
+			<ul id="chums" class="box no-drag"></ul>
+		</section>
+		<button id="pester">PESTER!</button>
+		<section id="mychumhandle">
+			<label>MyChumHandle</label>
+			<div id="chumhandle" class="box no-drag">
+				<img src="chum.png"/>
+				<span id="chumhandle-text">wintechRobot</span>
+			</div>
+		</section>
+		<section id="mood">
+			<label>Mood</label>
+			<center id="moods" class="no-drag">
+				<column>
+					<button class="mood"><img src="chummy.png"/><span>CHUMMY</span></button>
+					<button class="mood"><img src="chummy.png"/><span>PALSY</span></button>
+					<button class="mood"><img src="chummy.png"/><span>CHIPPER</span></button>
+				</column>
+				<column spacer></column>
+				<column>
+					<button class="mood"><img src="chummy.png"/><span>BULLY</span></button>
+					<button class="mood"><img src="chummy.png"/><span>PEPPY</span></button>
+					<button class="mood rancorous"><img src="rancorous.png"/><span>RANCOROUS</span></button>
+				</column>
+			</center>
+		</section>
+		<script style="display:none;/* isn't that obvious? :/ */">
+		//dev-stuff
+		var gui = require('nw.gui');
+		
+		if(gui.App.argv[0] === "live"){
+
+			var fs = require('fs');
+			fs.watch('./', [], function() {
+				try{window.unloadhook();}catch(e){}
+				location && location.reload(false);
+			});
+
+			var win = gui.Window.get(window);
+			win.setAlwaysOnTop(true);
+			
+		}
+		//let F12 open dev tools
+		$(function(){
+			$("body").on("keydown",function(e){
+				console.log(e.keyCode);
+				if(e.keyCode == 123){
+					win.showDevTools();
+				}
+			});
+		})
+		</script>
+	</body>
+</html>

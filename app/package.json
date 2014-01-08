@@ -1,0 +1,22 @@
+﻿{
+	"name": "PesterChum",
+	"description": "PesterChum Chat Client",
+	"version": "0.1",
+	"keywords": ["PesterChum","Homestuck","Chat"],
+	"main": "index.html",
+	"window": {
+		"show": true,
+		"toolbar": false,
+		"frame": false,
+		
+		"icon": "icon-32.png",
+		
+		"position": "center",
+		"width": 232,
+		"height": 346,
+		"min_width": 232,
+		"min_height": 344,
+		"max_width": 372,
+		"max_height": 672
+	}
+}

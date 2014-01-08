@@ -1,0 +1,136 @@
+
+
+html, body {
+	width: 100%;
+	height: 100%;
+	-webkit-user-select: none;
+	-webkit-app-region: drag;
+}
+body {
+	padding: 8px;
+	padding-top: 0;
+	font-size: 0.9em;
+	display: -webkit-flex;
+	-webkit-flex-flow: column;
+}
+body * {
+	-webkit-user-select: none;
+	-webkit-app-region: no-drag;
+	display: -webkit-flex;
+}
+input {
+	-webkit-user-select: text;
+	cursor: text;
+}
+
+
+
+h1 {
+	-webkit-app-region: drag;
+	-webkit-flex-flow: row;
+	-webkit-justify-content: center;
+}
+
+
+*::-webkit-scrollbar {
+	width: 0px;
+	height: 0px;
+}
+*:hover::-webkit-scrollbar {
+	background: #550;
+	width: 13px;
+	height: 13px;
+}
+*:hover::-webkit-scrollbar-thumb {
+	background: #CA0;
+}
+
+/*
+Look and Feel
+*/
+
+@font-face {
+	font-family: fontstuck;
+	src: url('FontStuck-Extended.ttf');
+}
+
+* {
+	font-size: 16px;
+	font-family: fontstuck, "Courier New", "MS Serif", "FixedSys", monospace;
+	font-weight: normal;
+	-webkit-font-smoothing: none;
+	font-smooth: never;
+	letter-spacing: -1px;
+	box-sizing: border-box;
+	border:0;
+	margin:0;
+	padding:0;
+	cursor: default;
+}
+
+
+img:hover { /*stupid*/
+	-webkit-transform: rotateY(0.5turn);
+}
+
+label {
+	
+	text-indent: 10px;
+}
+
+
+
+h1 {
+	color: white;
+	font-size: 2.0em;
+}
+h1 span {
+	font-size: inherit;
+	margin: 0 2px;
+}
+
+
+body {
+	border: 2px solid yellow;
+	background: #FFB500;
+}
+#chumhandle {
+	cursor: pointer;
+}
+button {
+	background: #FFF700;
+	border: 2px solid #C48A00;
+	cursor: pointer;
+}
+column button + button {
+	border-top: 0;
+}
+button.rancorous {
+	background: #F60100;
+}
+button.selected:after {
+	content: url("tick.png");
+}
+
+.box {
+	border: 2px solid yellow;
+	background: black;
+	color: white;
+}
+
+.chum {
+	cursor: pointer;
+}
+.chum.selected {
+	
+}
+.chum.offline {
+	color: gray;
+}
+.chum.offline img {
+	-webkit-filter: saturate(0) brightness(340) brightness(0.5);
+}
+
+
+
+
