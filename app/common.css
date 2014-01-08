@@ -74,8 +74,12 @@ img:hover { /*stupid*/
 }
 
 label {
-	
+	text-transform: uppercase;
 	text-indent: 10px;
+}
+label:after {
+	content: ":";
+	text-indent: 2px;
 }
 
 
