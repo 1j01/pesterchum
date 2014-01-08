@@ -1,8 +1,8 @@
 @echo off
 
 set CUR_DIR="%CD%"
-set EXE_PATH=%CUR_DIR%\release\nw.exe
-set ICO_PATH=%CUR_DIR%\app\app.ico
+set EXE_PATH=%CUR_DIR%\release\pesterchum.exe
+set ICO_PATH=%CUR_DIR%\app\pesterchum.ico
 set NWEXE_PATH=%CUR_DIR%\buildTools\nw\nw.exe
 set NWZIP_PATH=%CUR_DIR%\release\app.nw
 
