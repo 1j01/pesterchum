@@ -1,1 +1,1 @@
-PesterChum 6.0 _version 0.1_
+PesterChum 6.0, _version 0.1_
