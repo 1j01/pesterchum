@@ -72,7 +72,7 @@ $(function(){
 	addChum("ectoBiologist");
 	addChum("chosenThree");
 	addChum("someoneElse");
-	addChum("assHole");
+	addChum("anonymousHorse");
 	
 	$("#moods .mood").on("click",function(){
 		$("#moods .mood").removeClass("selected");
