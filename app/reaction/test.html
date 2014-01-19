@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Doc Scratch Reaction GIF Generator</title>
+		<script src="../jquery.js"></script>
+		<script src="../node_modules/gif/gif.js"></script>
+		<script src="scratch.js"></script>
+		<style>
+			body {
+				text-align: center;
+				background: #EEE;
+				color: black;
+			}
+			@font-face {
+				font-family: fontstuck;
+				src: url('../FontStuck-Extended.ttf');
+			}
+			button {
+				font-family: fontstuck;
+			}
+		</style>
+		<script>
+			$(function(){
+				$("#log").append($DSRG("She has what?"));
+				function go(){
+					$("#log").append($DSRG($("input").val()));
+					$("input").val("");
+				}
+				$("input").on("keydown",function(e){
+					if(e.keyCode === 13) go();
+				});
+				$("#pester").on("click",function(e){
+					go();
+				});
+			});
+			
+		</script>
+	</head>
+	<body>
+		<h1><font color="#2ed73a">D</font><font color="#e0e0e0">o</font><font color="#2ed73a">c Scratch</font> Reaction GIF Generator</h1>
+		<div id="log"></div>
+		<div id="inputs">
+			<input autofocus type="text"/>
+			<button id="pester">PESTERANGRILY!!!!!!!</button>
+		</div>
+		<img src="http://static1.wikia.nocookie.net/__cb20110218220306/mspaintadventures/images/1/10/02263.gif" width="650" height="450"/>
+		<p style="color:white;font-family:fontstuck">
+			Yeah I don't actually like homestuck much. It's just fun to make stuff for it because of the low bar____
+		</p>
+	</body>
+</html>
