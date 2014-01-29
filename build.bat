@@ -1,10 +1,9 @@
 @echo off
 
-set CUR_DIR="%CD%"
-set EXE_PATH=%CUR_DIR%\release\pesterchum.exe
-set ICO_PATH=%CUR_DIR%\app\pesterchum.ico
-set NWEXE_PATH=%CUR_DIR%\buildTools\nw\nw.exe
-set NWZIP_PATH=%CUR_DIR%\release\app.nw
+set EXE_PATH=%CD%\release\pesterchum.exe
+set ICO_PATH=%CD%\app\pesterchum.ico
+set NWEXE_PATH=%CD%\buildTools\nw\nw.exe
+set NWZIP_PATH=%CD%\release\app.nw
 
 SETLOCAL EnableDelayedExpansion
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (
@@ -37,11 +36,11 @@ cd ..\..
 echo.
 call :ColorText 0a "Copying files..."
 echo.
-if not exist %CUR_DIR%\release\ffmpegsumo.dll copy %CUR_DIR%\buildTools\nw\ffmpegsumo.dll %CUR_DIR%\release\ffmpegsumo.dll
-if not exist %CUR_DIR%\release\icudt.dll copy %CUR_DIR%\buildTools\nw\icudt.dll %CUR_DIR%\release\icudt.dll
-if not exist %CUR_DIR%\release\libEGL.dll copy %CUR_DIR%\buildTools\nw\libEGL.dll %CUR_DIR%\release\libEGL.dll
-if not exist %CUR_DIR%\release\libGLESv2.dll copy %CUR_DIR%\buildTools\nw\libGLESv2.dll %CUR_DIR%\release\libGLESv2.dll
-if not exist %CUR_DIR%\release\nw.pak copy %CUR_DIR%\buildTools\nw\nw.pak %CUR_DIR%\release\nw.pak
+if not exist %CD%\release\ffmpegsumo.dll copy %CD%\buildTools\nw\ffmpegsumo.dll %CD%\release\ffmpegsumo.dll
+if not exist %CD%\release\icudt.dll copy %CD%\buildTools\nw\icudt.dll %CD%\release\icudt.dll
+if not exist %CD%\release\libEGL.dll copy %CD%\buildTools\nw\libEGL.dll %CD%\release\libEGL.dll
+if not exist %CD%\release\libGLESv2.dll copy %CD%\buildTools\nw\libGLESv2.dll %CD%\release\libGLESv2.dll
+if not exist %CD%\release\nw.pak copy %CD%\buildTools\nw\nw.pak %CD%\release\nw.pak
 
 echo.
 call :ColorText 0a "Deleting temporary files..."
