@@ -3,7 +3,7 @@
 	<head>
 		<title>Doc Scratch Reaction GIF Generator</title>
 		<script src="../jquery.js"></script>
-		<script src="../node_modules/gif/gif.js"></script>
+		<script src="./gif.js/gif.js"></script>
 		<script src="scratch.js"></script>
 		<style>
 			body {
@@ -15,37 +15,51 @@
 				font-family: fontstuck;
 				src: url('../FontStuck-Extended.ttf');
 			}
-			button {
+			* {
 				font-family: fontstuck;
 			}
 		</style>
 		<script>
 			$(function(){
-				$("#log").append($DSRG("She has what?"));
+				$("#log").append($DocScratchReaction("She has what?"));
 				function go(){
-					$("#log").append($DSRG($("input").val()));
+					$("#log").append($DocScratchReaction($("input").val()));
 					$("input").val("");
 				}
-				$("input").on("keydown",function(e){
+				$("input").on("keydown", function(e){
 					if(e.keyCode === 13) go();
 				});
-				$("#pester").on("click",function(e){
+				$("#pester").on("click", function(e){
 					go();
 				});
 			});
-			
+			/*
+			var gif = new GIF({
+				workers: 2,
+				quality: 10,
+				workerScript: "gif.js/gif.worker.js"
+			});
+
+			gif.on("finished", function(blob) {
+				$canvas.trigger("gif", $("<img>").attr("src", URL.createObjectURL(blob)));
+			});
+			gif.addFrame(canvas, {delay: interval});
+			gif.render();
+			*/
 		</script>
 	</head>
 	<body>
-		<h1><font color="#2ed73a">D</font><font color="#e0e0e0">o</font><font color="#2ed73a">c Scratch</font> Reaction GIF Generator</h1>
+		<h1><span style="color:#2ed73a">D</font><span style="color:#e0e0e0">o</span>c Scratch</span> Reaction GIF Generator</h1>
 		<div id="log"></div>
 		<div id="inputs">
 			<input autofocus type="text"/>
 			<button id="pester">PESTERANGRILY!!!!!!!</button>
 		</div>
 		<img src="http://static1.wikia.nocookie.net/__cb20110218220306/mspaintadventures/images/1/10/02263.gif" width="650" height="450"/>
-		<p style="color:white;font-family:fontstuck">
-			Yeah I don't actually like homestuck much. It's just fun to make stuff for it because of the low bar____
-		</p>
+		<p style="color:white">SECRET TEXT omg</p>
+		<p style="color:transparent">SECRETER TEXT OMGOMG</p>
+		<p style="color:transparent;opacity:0">MEGA TEXT OMGOMG</p>
+		<p style="display:none">ULTRA SECRET TEXT OMGOMGOMG</p>
+		<!-- ULTIMATE SECRET TEXT OMGWTFBBQ -->
 	</body>
 </html>
