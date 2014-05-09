@@ -14,7 +14,7 @@
 		var $canvas = $(document.createElement("canvas"));
 		var canvas = $canvas[0];
 		var ctx = canvas.getContext("2d");
-
+		
 		var interval = 50;
 		var recording = false;
 		var recordingLength = 0;
@@ -70,6 +70,8 @@
 			ctx.font = fs+px+ff;
 			ctx.textBaseline = "bottom";
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
+			ctx.fillStyle = "#eee";
+			ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 			//raylike shadowy stuff
 			if(t>=4 && t<=6 || t==19 || t==22){
