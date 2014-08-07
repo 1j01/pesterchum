@@ -1,1 +1,0 @@
-start "%CD%\buildTools\nw" "%CD%\buildTools\nw\nw.exe" "%CD%\app" "live"
