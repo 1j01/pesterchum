@@ -1,8 +1,15 @@
-﻿{
-	"name": "PesterChum",
-	"description": "PesterChum Chat Client",
-	"version": "0.1",
-	"keywords": ["PesterChum","Homestuck","Chat"],
+{
+	"name": "Pesterchum",
+	"description": "Pesterchum Chat Client",
+	"version": "0.0.1",
+	"author": "Isaiah Odhner",
+	"keywords": [
+		"chat", "im", "app",
+		"homestuck", "mspa", "mspaintadventures",
+		"pester", "chum", "chummy"
+	],
+	
+	
 	"main": "index.html",
 	"window": {
 		"show": true,
