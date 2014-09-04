@@ -1,8 +1,12 @@
 
+*.log
 node_modules/
-
-# app build dir
 release/
+build/
+builds/
+cache/
+tmp/
+temp/
 
 
 
