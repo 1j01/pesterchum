@@ -12,9 +12,9 @@ There's not much to see here, but if you have Node.js, you can clone the project
 
 
 
-# Doc Scratch Reaction GIF Generator
+# [Doc Scratch Reaction GIF Generator][Reaction GIF Generator]
 
-**EPILEPSY WARNING**
+**EPILEPSY WARNING: huge flashing GIFs on these links**
 
 [Generate text GIFs][Reaction GIF Generator] in the style of [an astounded and furious Doc Scratch][angry Doc Scratch].
 
@@ -24,8 +24,17 @@ There's not much to see here, but if you have Node.js, you can clone the project
 
 
 
+# [SBAHJifier][SBAHJifier]
+
+I also made a chrome extension that makes any page look like SWEET BRO AND HELLA JEFF.
+[That's over here.][SBAHJifier]
+
+
+
+
 [MSPA]: http://www.mspaintadventures.com/
 [page that shows PesterChum]: http://www.mspaintadventures.com/?s=6&p=002010
 [angry Doc Scratch]: http://www.mspaintadventures.com/?s=6&p=004163
 [Reaction GIF Generator]: https://rawgit.com/1j01/pesterchum/master/app/reaction/test.html
+[SBAHJifier]: https://github.com/1j01/sbahjifier
 
