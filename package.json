@@ -1,31 +1,34 @@
 {
-	"name": "pesterchum",
-	"description": "Pesterchum Chat Client",
-	"version": "0.0.1",
-	"author": "Isaiah Odhner",
-	"keywords": [
-		"chat", "im", "app",
-		"homestuck", "mspa", "mspaintadventures",
-		"pester", "chum", "chummy"
-	],
-	
-	
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/1j01/pesterchum.git"
-	},
-	"bugs": {
-		"url": "https://github.com/1j01/pesterchum/issues"
-	},
-	"private": true,
-	
-	
-	"scripts": {
-		"run": "nwbuild -r app",
-		"start": "nwbuild -r app",
-		"build": "nwbuild -o release app"
-	},
-	"devDependencies": {
-		"node-webkit-builder": "^0.1.1"
-	}
+  "name": "pesterchum",
+  "description": "Pesterchum Chat Client",
+  "version": "0.0.1",
+  "author": "Isaiah Odhner",
+  "keywords": [
+    "chat",
+    "im",
+    "app",
+    "homestuck",
+    "mspa",
+    "mspaintadventures",
+    "mspaint",
+    "pester",
+    "chum",
+    "pesterchum",
+    "chummy",
+    "rancorous"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1j01/pesterchum.git"
+  },
+  "bugs": {
+    "url": "https://github.com/1j01/pesterchum/issues"
+  },
+  "private": true,
+  "scripts": {
+    "start": "nw app"
+  },
+  "dependencies": {
+    "nw": "^0.12.3"
+  }
 }

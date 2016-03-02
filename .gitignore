@@ -1,13 +1,6 @@
 
 *.log
 node_modules/
-release/
-build/
-builds/
-cache/
-tmp/
-temp/
-
 
 
 #################
