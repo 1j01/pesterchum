@@ -1,40 +1,31 @@
 # <img src="app/pesterchums.png" align="center"> PesterChum 6.0, _version 0.1_
 
-A non-functional recreation of the [MSPA][] [PesterChum][page that shows PesterChum] 6.0 client.
+A non-functional recreation of the [PesterChum 6.0][page that shows PesterChum] client from [Homestuck][].
 
-There's actually a functional client [over here](https://github.com/illuminatedwax/pesterchum), but it takes some liberties with the UI.
+There's actually a functional client [over here](https://github.com/illuminatedwax/pesterchum). 
+(It takes some liberties with the UI, naturally.)
 
 ![](app/icon-256.png)
 
-## Run
+## Install + Run
 
-There's not much to see here, but if you have Node.js, you can clone the project and run `npm i` and `npm start`
+Like I said, this thing isn't functional, but here's the steps:
 
+* Install [Node.js](https://nodejs.org/)
+* [Clone](https://help.github.com/articles/cloning-a-repository/) the project
+* In the project directory, run `npm i` to install
+* `npm start`
 
+## See Also
 
-# [Doc Scratch Reaction GIF Generator][Reaction GIF Generator]
+* [She Has What?][She Has What?]: angry Doc Scratch text effect GIF maker
 
-**EPILEPSY WARNING: huge flashing GIFs on these links**
-
-[Generate text GIFs][Reaction GIF Generator] in the style of [an astounded and furious Doc Scratch][angry Doc Scratch].
-
-![SHE HAS WHAT? says Doc Scratch](app/reaction/generated/SHE-HAS-WHAT.GIF)
-
-![OH OKAY NO THAT'S FINE says Doc Scratch](app/reaction/generated/OH-OKAY-NO-THATS-FINE.GIF)
-
+* [SBAHJifier][SBAHJifier]: browser extension that makes any page look like SWEET BRO AND HELLA JEFF
 
 
-# [SBAHJifier][SBAHJifier]
-
-I also made a chrome extension that makes any page look like SWEET BRO AND HELLA JEFF.
-[That's over here.][SBAHJifier]
-
-
-
-
-[MSPA]: http://www.mspaintadventures.com/
-[page that shows PesterChum]: http://www.mspaintadventures.com/?s=6&p=002010
-[angry Doc Scratch]: http://www.mspaintadventures.com/?s=6&p=004163
-[Reaction GIF Generator]: https://rawgit.com/1j01/pesterchum/master/app/reaction/test.html
+[Homestuck]: http://www.homestuck.com/
+[page that shows PesterChum]: https://www.homestuck.com/story/110
+[angry Doc Scratch]: https://www.homestuck.com/story/2263
+[She Has What?]: https://github.com/1j01/she-has-what?
 [SBAHJifier]: https://github.com/1j01/sbahjifier
 
